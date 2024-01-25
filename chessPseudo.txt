@@ -1,0 +1,62 @@
+# Chess Game Pseudocode
+
+# Class Definition: ChessGame
+class ChessGame:
+    # Initialization method
+    def __init__(self):
+        # Initialize file paths
+        self.piece_image_path = "assets/chesspieces.png"
+        self.tile_image_path = "assets/chesstile.png"
+
+        # Board configuration
+        self.board_size = 15
+        self.tile_size = 15
+
+        # Initialize board, piece images, and game state
+        self.create_board()
+        self.load_piece_images()
+        self.current_player = 'white'
+        self.move_history = []
+
+        # UI setup
+        self.create_widgets()
+
+    # Method to create an empty chess board
+    def create_board(self):
+        self.board = [['empty' for _ in range(self.board_size)] for _ in range(self.board_size)]
+
+    # Method to load piece images from the file
+    def load_piece_images(self):
+        # Load individual piece images and tile image
+        # Store them in the piece_images and tile_image attributes
+
+    # Method to create UI widgets (Canvas)
+    def create_widgets(self):
+        # Create a Tkinter Canvas widget
+        # Bind the left mouse click event to the on_click method
+        # Draw the initial chessboard
+
+    # Method to draw the chessboard
+    def draw_board(self):
+        # Loop through rows and columns to draw tiles and pieces on the canvas
+        # Use piece_images for drawing pieces and tile_image for drawing tiles
+
+    # Method called when a user clicks on the chessboard
+    def on_click(self, event):
+        # Get the row and column based on the mouse click event
+        # Get the piece at the clicked position
+        # Check if the piece belongs to the current player
+        # If yes, prompt the user to enter a move and call make_move method
+
+    # Method to process and make a move
+    def make_move(self, move):
+        # Placeholder for move processing
+        # Update the board based on the entered move
+        # Switch the current player
+        # Update the move history
+        # Redraw the chessboard
+
+# Main program
+if __name__ == "__main__":
+    # Create an instance of the ChessGame class
+    # Start the Tkinter main loop
